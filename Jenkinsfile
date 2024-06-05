@@ -12,7 +12,7 @@ pipeline {
                 checkout scmGit(
                     branches: [[name: '*/main']],
                     extensions: [],
-                    userRemoteConfigs: [[url: 'https://github.com/vinithmh/revhire-backend-eks-infra.git']]
+                    userRemoteConfigs: [[url: 'https://github.com/prasannababu7/revhire-final-backend-eks-cluster-repo.git']]
                 )
             }
         }
