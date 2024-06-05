@@ -5,7 +5,7 @@ provider "aws" {
 module "vpc" {
   source = "terraform-aws-modules/vpc/aws"
 
-  name               = "my-vpc-new"
+  name               = "my-vpc-new-final"
   cidr               = "10.0.0.0/16"
   azs                = ["us-east-1a", "us-east-1b"]
   private_subnets    = ["10.0.1.0/24", "10.0.2.0/24"]
@@ -26,7 +26,7 @@ module "vpc" {
 module "eks" {
   source          = "terraform-aws-modules/eks/aws"
   version         = "~> 20.0"
-  cluster_name    = "revhire-cluster-new"
+  cluster_name    = "revhire-cluster-new-final"
   cluster_version = "1.29"
   cluster_endpoint_public_access = true
 
